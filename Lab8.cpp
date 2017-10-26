@@ -72,17 +72,17 @@ void calculations()
 			case OP_JMP:
 			    offset = instruction[i][1];
 			    if(offset + i <= 10)
-                {
-                    i += offset;
-                }
+                		{
+                   		    i += offset;
+               			}
 				break;
 			case OP_CJP:
 			    offset = instruction[i][1];
-				if((instruction[i][2] == instruction[i][3]) &&(offset + i <= 10))
-                {
-                    i += offset;
-                }
-				break;
+			    if((instruction[i][2] == instruction[i][3]) &&(offset + i <= 10))
+                	    {
+                    		i += offset;
+                	    }
+			    break;
 		}
 	}
 }
